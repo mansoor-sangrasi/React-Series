@@ -4,14 +4,11 @@ import UserContext from '../Context/UserContext'
 
 function Profile() {
     const {user}=useContext(UserContext)
-
-   // if (!user) return <div>Please login</div>
-
-  return (
-    <>
-    <div>Welcome {user.username}</div>
-    </>
-  )
+  
+    if ((!user.username || !user.password)) return <div>Please login</div>
+    else if(user.username && user.password) return <div>Welcome Dear {user.username}</div>
+    
+  
 }
 
 export default Profile
