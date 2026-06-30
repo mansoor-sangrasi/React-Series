@@ -12,7 +12,8 @@ function App() {
     <>
     <h1 className='bg-blue-400 text-black p-4 rounded-xl '>TailwindCSS Test</h1>
     <Card username="My name is Mansoor Ahmed I am from Pakistan" btntext="Introduction"/>
-    <Card username="My name is Tofique Ahmed I am from India" btntext="My detail"/>
+    <Card username="My name is Tufail Ahmed I am from India" btntext="My detail"/>
+    
     </>
    
   )
